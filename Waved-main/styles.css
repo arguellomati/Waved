@@ -170,12 +170,15 @@ nav {
 
 .product-detail {
     width: 360px;
-    
     padding: 0 0 15px 24px;
     background-color: var(--white);
     box-sizing: border-box;
     position: absolute;
     right: 0;
+    margin-top: 60px;
+    border: 1px solid var(--very-light-pink);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
 }
 .button-product-detail--container{
     padding-right: 10px;
