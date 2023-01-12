@@ -11,133 +11,136 @@
 </head>
 <body>
     <nav>
-
-
-        <div class="navbar-left">
-            <img src="./logos/wavedd.svg.png" alt="logo" class="logo">
-
-            <ul>
-                <li>
-                    <a href="-">Todo</a>
-                </li>
-                <li>
-                    <a href="-">Drops</a>
-                </li>
-                <li>
-                    <a href="-">Buzos</a>
-                </li>
-                <li>
-                    <a href="-">Remeras</a>
-                </li>
-                <li>
-                    <a href="-">PFV</a>
-                </li>
-                <li>
-                    <a href="-">Bones</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="navbar-right">
-            <ul>
-            <li class="navbar-email">waved@example.com <img src="./icons/flechita.svg" alt=""></li>
-            <li class="navbar-cart">
-                <img src="./icons/icon_shopping_cart.svg" alt="carrito">
-                <div>3</div>
+    <img src="./icons/icon_menu.svg" alt="menu" class="menu">
+    <div class="mobile-menu inactive">
+        <ul>
+            <li>
+            <a href="/">Todo</a>
+            </li>
+            <li>
+            <a href="/">Buzos</a>
+            </li>
+            <li>
+            <a href="/">Remeras</a>
+            </li>
+            <li>
+            <a href="/">PFV #1</a>
+            </li>
+            <li>
+            <a href="/">ROD #2</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+            <a href="/">Mis ordenes</a>
+            </li>
+            <li>
+            <a href="/">Mi cuenta</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+            <a href="/" class="email">Waved@example.com</a>
+            </li>
+            <li>
+            <a href="/" class="sign-out">Salir</a>
             </li>
         </ul>
         </div>
-
-        <div class="desktop inactive">
-            <ul>
-                <li>
-                    <a href="/" class="title">My orders</a>
-                </li>
-                <li>
-                    <a href="/">My account</a>
-                </li>
-                <li>
-                    <a href="/">Sign Out</a>
-                </li>
-            </ul>
+    <div class="navbar-left">
+        <img src="./logos/wavedd.svg.png" alt="logo" class="logo">
+        <ul>
+        <li>
+            <a href="/">Todo</a>
+        </li>
+        <li>
+            <a href="/">Buzos</a>
+        </li>
+        <li>
+            <a href="/">Remeras</a>
+        </li>
+        <li>
+            <a href="/">PFV #1</a>
+        </li>
+        <li>
+            <a href="/">ROD #2</a>
+        </li>
+        </ul>
+    </div>
+    <div class="navbar-right">
+        <ul>
+        <li class="navbar-email">waved@example.com
+        </li>
+        <li class="navbar-shopping-cart">
+            <img src="./icons/icon_shopping_cart.svg" alt="shopping cart">
+            <div>
+            0
+            </div>
+        </li>
+        </ul>
+    </div>
+    <div class="desktop-menu inactive">
+        <ul>
+            <li>
+            <a href="/" class="title">Mis ordenes</a>
+            </li>
+            <li>
+            <a href="/">Mi cuenta</a>
+            </li>
+            <li>
+            <a href="/">Salir</a>
+            </li>
+        </ul>
         </div>
     </nav>
 
-    
-    <aside class="product inactive">
-        <div class="arrow">
-            <img src="./icons/flechita.svg" alt="arrow">
-            <p class="title">My order</p>
-        </div>
-        <div class="my-order-content">
-
-            <div class="darken inactive"></div>
-
-            <div class="shopping-cart">
-            <figure>
-                <img src="./logos/aloha!.PNG" alt="">
-            </figure>
-            <p>Aloha!</p>
-            <p>$5.000</p>
-            <img src="./icons/icon_close.png" alt="close" class="close">
-        </div>
-
-        <div class="shopping-cart">
-            <figure>
-                <img src="./logos/paradise.PNG" alt="">
-            </figure>
-            <p>Paradise!</p>
-            <p>$5.000</p>
-            <img src="./icons/icon_close.png" alt="close" class="close">
-
-        </div>
-
-        <div class="shopping-cart">
-            <figure>
-                <img src="./logos/salty.PNG" alt="">
-            </figure>
-            <p>Salty!</p>
-            <p>$5.000</p>
-            <img src="./icons/icon_close.png" alt="close" class="close">
-
-        </div>
+    <aside class="product-detail inactive">
+    <div class="title-container">
+        <img src="./icons/flechita.svg" alt="arrow">
+        <p class="title">Mi compra</p>
     </div>
-    <div class="order">
+    <div class="my-order-content">
+    </div>
+        <div class="order">
         <p>
             <span>Total</span>
         </p>
-        <p>
-            $15.000
-        </p>
+        <p class="total">$560.00</p>
+        </div>
+    <div class="button-product-detail--container">
+        <button class="primary-button">
+        Finalizar compra
+        </button>
     </div>
-</div>
-            <button class="primary-button add-to-cart"> 
-                Checkout
-            </button>
-        </div>
     </aside>
-
-    <aside class="product-detail inactive">
-        <img src="./icons/icon_close.png" alt="close" class="product-close">
-        <img src="./logos/paradise.PNG" alt="paradise">
-        <div class="info">
-            <p>$5.000</p>
-            <p>Paradise!</p>
-            <p>Remera diseñada desde 0 por Waved. Confeccionada con la mas alta calidad de materiales del mercado. WorlWide Shipping.</p>
-            <button class="primary-button add-to-cart"> 
-                <img src="./icons/bt_add_to_cart.svg" alt="add-cart">
-                Add to cart
-            </button>
-        </div>
+    <aside class="product-detail-left inactive">
+    <div class="product-detail-close">
+        <img src="./icons/icon_close.png" alt="close">
+    </div>
+    <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike">
+    <div class="product-info-left">
+        <p>$35,00</p>
+        <p>Bike</p>
+        <p>With its practical position, this bike also fulfills a decorative function, add your hall or workspace.</p>
+        <button class="primary-button add-to-cart-button">
+        <img src="./icons/bt_add_to_cart.svg" alt="add to cart">
+        Add to cart
+        </button>
+    </div>
     </aside>
-
+    
     <section class="main-container">
-        <div class="cards-container">
-
-            
-        </div>
+    <div class="cards-container">
+    </div>
     </section>
-
+    <div class="modal inactive">
+    <div class="modal-contenido">
+        <p class="modal-title">Solo podes adquirir UNA unidad por persona!</p>
+        <div class="boton-modal">
+        <p>Aceptar</p>
+    </div>
+    </div>
+    </div>
     <script src="./main.js"></script>
 </body>
 </html>
