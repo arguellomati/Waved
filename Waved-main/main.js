@@ -160,7 +160,7 @@ function renderListProduct(productList){
         divproductinfo.classList.add('product-info')
         pprice.innerText ='$' + product.price
         pname.innerText = product.name
-        imgproductinfo.setAttribute('src', './icons/bt_add_to_cart.svg')
+        imgproductinfo.setAttribute('src', './icons/carritomas.png')
         
         figureproductinfo.appendChild(imgproductinfo)
         divdivproductinfo.appendChild(pprice)
