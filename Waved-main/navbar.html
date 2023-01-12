@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --white: #ffffff;
+            --black: #000000;
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --dark: #232830;
+            --hospital-green: #acd9b2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 24px;
+            height: 60px;
+            border-bottom: 1px solid var(--very-light-pink);
+        }
+        .logo {
+            width: 50px;
+            height: 40px;
+            margin-right: 7px;
+            margin-top:12px;
+            margin-left: 0px;
+            padding-left: 0;
+        }
+        .navbar-left ul,
+        .navbar-right ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 0px;
+            display: flex;
+            align-items: center;
+            height: 60px;
+        }
+        .navbar-left {
+            display: flex;
+            margin-left: 0px;
+        }
+        .navbar-left ul li a,
+        .navbar-right ul li a {
+            text-decoration: none;
+            color: var(--very-light-pink);
+            border: 1px solid var(--white);
+            padding: 8px;
+            border-radius: 8px;
+        }
+        .navbar-left ul li a:hover,
+        .navbar-right ul li a:hover {
+            border: 1px solid var(--white);
+            color: var(--black);
+        }
+        .navbar-email {
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+            margin-right: 10px;
+        }
+        .navbar-email img {
+            margin-left: 5px;
+            transform: rotate(90deg);
+        }
+        .navbar-cart {
+            position: relative;
+            margin-left: 9px;
+        }
+        .navbar-cart:hover {
+        filter: invert(69%) sepia(22%) saturate(592%) hue-rotate(77deg)
+        brightness(97%) contrast(90%);
+        }
+        .navbar-cart div {
+            width: 13px;
+            height: 13px;
+            background-color: var(--hospital-green);
+            border-radius: 50%;
+            font-size: var(--sm);
+            font-weight: bold;
+            position: absolute;
+            top: -7px;
+            right: -4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+
+
+        <div class="navbar-left">
+            <img src="./logos/wavedd.svg.png" alt="logo" class="logo">
+
+            <ul>
+                <li>
+                    <a href="-">Todo</a>
+                </li>
+                <li>
+                    <a href="-">Drops</a>
+                </li>
+                <li>
+                    <a href="-">Buzos</a>
+                </li>
+                <li>
+                    <a href="-">Remeras</a>
+                </li>
+                <li>
+                    <a href="-">PFV</a>
+                </li>
+                <li>
+                    <a href="-">Bones</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-right">
+            <ul>
+            <li class="navbar-email">waved@example.com <img src="./icons/flechita.svg" alt=""></li>
+            <li class="navbar-cart">
+                <img src="./icons/icon_shopping_cart.svg" alt="carrito">
+                <div>3</div>
+            </li>
+        </ul>
+        </div>
+    </nav>
+</body>
+</html>
