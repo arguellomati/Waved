@@ -101,12 +101,7 @@ productList.push({
     image: "./logos/paradise.PNG",
     desc: 'Enjoy the fucking paradise! Remeras creadas con la mejor calidad del mercado, drops unicos e irrepetibles, pocas unidades que hacen mantener su originalidad y exclusividad.'
 })
-productList.push({
-    name:"Ride Or Die",
-    price:4000,
-    image:"./logos/rideordie.PNG",
-    desc: 'Ride or die! Remeras creadas con la mejor calidad del mercado, drops unicos e irrepetibles, pocas unidades que hacen mantener su originalidad y exclusividad.'
-})
+
 productList.push({
     name:"Aloha!",
     price:4000,
