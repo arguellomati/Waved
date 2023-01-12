@@ -58,7 +58,6 @@ nav {
 }
 .navbar-left ul li a:hover,
 .navbar-right ul li a:hover {
-    border: 1px solid var(--black);
     color: var(--black);
 }
 .navbar-email {
@@ -226,6 +225,9 @@ nav {
 .order p:nth-child(2) {
     text-align: end;
     font-weight: bold;
+}
+.arrow {
+    cursor: pointer;
 }
 .shopping-cart {
     display: grid;

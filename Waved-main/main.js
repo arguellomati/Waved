@@ -12,6 +12,7 @@ let countCarrito        = document.querySelector('.navbar-shopping-cart div')
 let totalCarrito        = document.querySelector('.total')
 let modal               = document.querySelector('.modal')
 let cerrarModal         = document.querySelector('.boton-modal')
+let cerrarMiOrden       = document.querySelector('.arrow')
 let productImageInfor   = document.querySelector('.product-detail-left > img:nth-child(2)')
 let labelPriceInfo      = document.querySelector('.product-info-left p:nth-child(1)')
 let labelNameInfo       = document.querySelector('.product-info-left p:nth-child(2)')
@@ -29,6 +30,7 @@ iconShopping.addEventListener('click', toggleAsideShopping)
 productDetailClose.addEventListener('click',closeProductDetail)
 buttonInfo.addEventListener('click', butonClick)
 cerrarModal.addEventListener('click', closeModal)
+cerrarMiOrden.addEventListener('click', closeMyOrder)
 
 
 function butonClick(){
@@ -63,6 +65,13 @@ function openProductDetail(){
 
 function closeProductDetail(){
     productoACarrito = []
+    asideShopping.classList.add('inactive');
+    mobileMenu.classList.add('inactive');
+    desktopMenu.classList.add('inactive');
+    productDetailLeft.classList.add('inactive')
+}
+
+function closeMyOrder(){
     asideShopping.classList.add('inactive');
     mobileMenu.classList.add('inactive');
     desktopMenu.classList.add('inactive');
