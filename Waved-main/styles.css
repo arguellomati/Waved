@@ -338,6 +338,10 @@ nav {
     position: absolute;
     color: var(--white);
     right: 0;
+    margin-top: 63px;
+    border: 1px solid var(--very-light-pink);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
 }
 .product-detail-close {
     width: 14px;
